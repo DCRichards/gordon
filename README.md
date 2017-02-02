@@ -13,7 +13,7 @@ Add a file in `config/config.json` with the following format:
   },
   "stations": [
     "BTN",
-    "CLJ,"
+    "CLJ"
   ],
   "operators": {
     "TL": "@TLRailUK",
