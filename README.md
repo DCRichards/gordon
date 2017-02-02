@@ -2,7 +2,7 @@
 
 Platform 5 to nowhere fast. Gordon monitors National Rail delays and reports them on Twitter.
 
-![gordon](http://giphy.com/gifs/no-gif-thomas-the-tank-engine-7hvkctkRc3Q6Q "gordon.gif")
+![gordon](http://i.giphy.com/7hvkctkRc3Q6Q.gif "gordon.gif")
 
 ## Configuration
 
