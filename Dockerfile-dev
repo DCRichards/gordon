@@ -1,0 +1,9 @@
+FROM node:6.9.4
+
+ADD . /usr/src/app
+
+WORKDIR /usr/src/app
+
+ENTRYPOINT [ "npm", "run" ]
+
+CMD [ "start" ]

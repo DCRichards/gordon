@@ -3,6 +3,7 @@ services:
   server:
     build:
       context: .
+      dockerfile: Dockerfile-dev
     volumes:
       - ./lib:/usr/src/app/lib
       - ./config:/usr/src/app/config
