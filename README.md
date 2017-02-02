@@ -2,6 +2,47 @@
 
 Platform 5 to nowhere fast. Gordon monitors National Rail delays and reports them on Twitter.
 
+## Configuration
+
+Add a file in `config/config.json` with the following format:
+
+```json
+{
+  "poller": {
+    "duration": 60000
+  },
+  "stations": [
+    "BTN",
+    "CLJ,"
+  ],
+  "operators": {
+    "TL": "@TLRailUK",
+    "SN": "@SouthernRailUK",
+    "SW": "@SW_Trains",
+    "GX": "@GatwickExpress",
+    "SE": "@Se_Railway",
+    "LO": "@LDNOverground",
+    "DEFAULT": "@nationalrailenq"
+  },
+  "tags": [
+    "#AllChange",
+    "#DelayRepay",
+    "#RailRefunds"
+  ],
+  "transport": {
+    "url": "https://transportapi.com/v3/",
+    "app_id": "xxxx",
+    "app_key": "xxxx"
+  },
+  "twitter": {
+    "consumer_key": "xxxx",
+    "consumer_secret": "xxxx",
+    "access_token_key": "xxxx",
+    "access_token_secret": "xxxxx"
+  }
+}
+```
+
 ## Setup
 
 Gordon uses [Docker](https://docker.com/). To get set up:
