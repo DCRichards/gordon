@@ -4,6 +4,11 @@ Platform 5 to nowhere fast. Gordon monitors National Rail delays and reports the
 
 ![gordon](http://i.giphy.com/7hvkctkRc3Q6Q.gif "gordon.gif")
 
+## Prerequisites
+
+* Twitter API keys, these can be obtained from [Application Management](https://apps.twitter.com/).
+* Transport API keys, these can be obtained from the [Developer Console](https://developer.transportapi.com/).
+
 ## Configuration
 
 Add a file in `config/config.json` with the following format:
@@ -47,21 +52,22 @@ Add a file in `config/config.json` with the following format:
 
 ## Setup
 
-Gordon uses [Docker](https://docker.com/). To get set up:
+For ease and portability, Gordon uses [Docker](https://docker.com/). To get set up, simply run:
 
 ```shell
 docker-compose build
 docker-compose up
 ```
 
+Note that this will use `Dockerfile-dev` rather than `Dockerfile`, which is intended only for production.
+
 ## Deployment
 
-Gordon is set up to be deployed on a device such as a [Raspberry Pi](http://raspberrypi.org/) using [Resin OS](https://resinos.io). 
+Gordon is set up to be deployed on a device such as a [Raspberry Pi](http://raspberrypi.org/) using [Resin OS](https://resinos.io). Before deploying, ensure the image in the `Dockerfile` is correctly selected for
+your chosen architecture. Some images can be found on [Docker Hub](https://hub.docker.com/u/resin/).
 
-The configuration for Resin deployment can be found in `.resin-sync.yml`, see the Resin documentation for more information. To deploy, first you'll need the [Resin Device Toolbox](https://github.com/resin-os/resin-device-toolbox) installed. You can then run the following to deploy:
+To deploy, first you'll need the [Resin Device Toolbox](https://github.com/resin-os/resin-device-toolbox) installed. You can then run the following to deploy:
 
 ```shell
 rdt push <hostname> -s .
 ```
-
-*Note, you'll need to ensure the image in the `Dockerfile` is compatible with your device architecture (ARMv5, ARMv6 etc).*
