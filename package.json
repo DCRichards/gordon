@@ -1,0 +1,24 @@
+{
+  "name": "@DCRichards/gordon",
+  "version": "0.1.0",
+  "description": "Making sure National Rail delays never go unnoticed.",
+  "main": "lib/index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node lib/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gordon",
+    "rail",
+    "delays",
+    "nationalrail"
+  ],
+  "author": "DCRichards",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "0.15.3",
+    "moment": "2.17.1",
+    "twitter": "1.7.0"
+  }
+}

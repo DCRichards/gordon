@@ -1,0 +1,9 @@
+version: '2'
+services:
+  server:
+    build:
+      context: .
+    volumes:
+      - ./lib:/usr/src/app/lib
+      - ./config:/usr/src/app/config
+      - ./package.json:/usr/src/app/package.json
