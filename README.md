@@ -46,6 +46,10 @@ Add a file in `config/config.json` with the following format:
     "consumer_secret": "xxxx",
     "access_token_key": "xxxx",
     "access_token_secret": "xxxxx"
+  },
+  "redis": {
+    "host": "redis",
+    "port": 6379
   }
 }
 ```
