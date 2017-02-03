@@ -8,3 +8,11 @@ services:
       - ./lib:/usr/src/app/lib
       - ./config:/usr/src/app/config
       - ./package.json:/usr/src/app/package.json
+    links:
+      - redis
+
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"
+    restart: always
