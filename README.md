@@ -58,7 +58,7 @@ Add a file in `config/config.json` with the following format:
 
 For ease and portability, Gordon uses [Docker](https://docker.com/). To get set up, simply run:
 
-```shell
+```bash
 docker-compose build
 docker-compose up
 ```
@@ -76,7 +76,7 @@ To get Gordon up and running:
 
 2. Gordon uses [Redis](https://redis.io/) for its queue and database. To get that running, you'll need to pull and start the redis docker image for your architecture. Links to official docker images for various architectures can be found [here](https://github.com/docker-library/official-images#architectures-other-than-amd64).
 
-	```shell
+	```bash
 	rdt ssh
 	docker pull armel/redis
 	docker run -d --name redis -p 6379:6379 armel/redis
@@ -84,6 +84,6 @@ To get Gordon up and running:
 
 3. Ensure `redis.host` is correctly set to `localhost` in `config/config.json`. You can then run the following to deploy:
 
-	```shell
+	```bash
 	rdt push resin -s .
 	```
